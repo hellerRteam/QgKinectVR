@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6755296089696585676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6755296089696585666}
+  - component: {fileID: 6755296089696585677}
+  - component: {fileID: 6755296089696585664}
+  - component: {fileID: 6755296089696585667}
+  m_Layer: 0
+  m_Name: PoseDetect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6755296089696585666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755296089696585676}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.81119806, y: 1.2721082, z: -7.8545036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6755296089696585677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755296089696585676}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a2276ae0c75c9439e36365c3e7554d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filePath: F:\DC-project\AK Record\BodyRecording.txt
+  infoText: {fileID: 0}
+  playAtStart: 0
+--- !u!114 &6755296089696585664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755296089696585676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 918410564bd8112498928b70a6b232ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Difficulty: 0
+  Accuracy:
+  - 0
+  - 0.1
+  - 0.4
+  - 0.7
+  - 0.999
+  TargetAccuracyLow: 0
+  avatarModel: {fileID: 0}
+  poseModel: {fileID: 0}
+  poseJoints: 00000000050000000a000000070000000c000000090000000e00000003000000
+  delayAllowed: 2
+  timeBetweenChecks: 0.1
+  matchThreshold: 0.5
+  infoText: {fileID: 0}
+  textMeshPro: {fileID: 0}
+--- !u!114 &6755296089696585667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755296089696585676}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf311d11873c3b4ba387d2b6d4d7ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dynPoseDetector: {fileID: 6755296089696585664}
+  maxPointsPerStep: 100
+  timeBetweenChecks: 1
+  motionStepTimes:
+  - startTime: 0
+    endTime: 22
+  - startTime: 22
+    endTime: 39
+  - startTime: 39
+    endTime: 54
+  - startTime: 54
+    endTime: 68
+  - startTime: 68
+    endTime: 85
+  - startTime: 85
+    endTime: 110
+  - startTime: 110
+    endTime: 125
+  - startTime: 125
+    endTime: 132
+  motionInfoText: {fileID: 0}
+  stepInfoText: {fileID: 0}
